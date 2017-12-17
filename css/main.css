@@ -1,1 +1,42 @@
-/* Los estilos de tu proyecto */
+/* setear el documento */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*modificando estilos a header*/
+
+.container-header{
+    height: 66px;
+}
+
+.navbar-toggle{
+    float: left;
+    margin: 16px 30px 16px 16px;
+}
+
+.navbar-nav{
+    /*float: right;*/
+    /*margin: 10px; usar con media query*/
+}
+
+/*estilos a section 1*/
+.box-yellow{
+    background-color: #ffb100;
+}
+
+/*section 1 debe iniciar despues del nav*/
+
+.img-fondo{
+    height: 520px;
+    background-image: url(../assets/images/taxi.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register .container-fluid{
+    padding: 0;
+}
+
