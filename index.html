@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lab Car</title>
 </head>
 <body>
@@ -27,15 +28,44 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-1">
                         <ul class="nav navbar-nav">
-                            <li> <a href="">Viaja</a></li>
-                            <li> <a href="">Conduce</a></li>
-                            <li> <a href="">Inicia Seción</a></li>
+                            <li>Viaja</a></li>
+                            <li>Conduce</li>
+                            <li data-toggle="modal" data-target="#myModal">Inicia Seción</li>
                         </ul>
                     </div>
                 </div>                    
             </nav>
         </div>
     </header>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <img src="assets/images/perfil.jpg" alt="perfil" class="img-circle col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4">
+                </div>
+                <div class="modal-body col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                            <div class="input-group col-xs-12">
+                                <div class="input-group-addon">$</div>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                            <div class="input-group col-xs-12">
+                                <div class="input-group-addon">$</div>
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">LOGING</button>
+                        <p>Forgot Password <a href="#">Click Here</a></p>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
     <section class="register">
         <div class="container-fluid">
             <div  class="img-city">
@@ -93,18 +123,18 @@
     </section>
     <section class="tarifas">
         <div class="container-fluid">
-            <div class="tarifas-form">
+            <div class="tarifas-form col-sm-4 col-sm-offset-1">
                 <h3>Tarifas</h3>
                 <p>Consulta las tarifas LabCar aquí</p>
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <div class="col-xs-10 input-flex">
+                        <div class="col-xs-10 col-sm-12 input-flex">
                             <img src="assets/images/shape.png" alt="ubicacion">
                             <input type="text" class="form-control" id="inputEmail3" placeholder="Ingrese su punto de partida">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-xs-10 input-flex">
+                        <div class="col-xs-10 col-sm-12 input-flex">
                             <img src="assets/images/shape2.png" alt="destino">
                             <input type="text" class="form-control" id="inputEmail3" placeholder="Ingrese su destino">
                         </div>
@@ -116,13 +146,57 @@
                     </div>  
                 </form>
             </div>
-            <div class="map col-xs-12">           
+            <div class="map col-xs-11 col-sm-offset-2 col-sm-5">           
                 <iframe class="col-xs-12" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3902.8426505475086!2d-77.08365488254306!3d-11.985387507919809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1513572638348" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
     <footer>
-
+        <div class="container-fluid">
+            <div class="row">
+                <img src="assets/images/logoBlanco.png" alt="logo blanco">
+            </div>
+            <hr>
+            <div class="row row-flex">
+                <div class="col-xs-6 col-sm-3 icons-fa">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-apple" aria-hidden="true"></i>
+                    <i class="fa fa-play" aria-hidden="true"></i>                    
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <ul>
+                        <li>Viaja</li>
+                        <li>Conduce</li>
+                        <li>Ciudades</li>
+                        <li>Entregas</li>
+                        <li>Cómo funciona?</li>
+                        <li>Países</li>
+                        <li>Seguridad</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 none-xs">
+                    <ul>
+                        <li>Oportunidades</li>
+                        <li>Nuestra Historia</li>
+                        <li>API de LabCar</li>
+                        <li>Eventos</li>
+                        <li>Desarrolladores</li>
+                        <li>Servicios</li>
+                        <li>Coders</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6 img-playstore">
+                    <img src="assets/images/appstore.png" alt="iconos">
+                    <img src="assets/images/enBadgeWebGeneric.png" alt="iconos">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p>2017 LabCar technologies Inc.</p>
+            </div>
+        </div>
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
