@@ -264,12 +264,33 @@ i{
     background-color: gray;
 }
 
-#myModalRegister .enviar-btn{
+.enviar-btn{
     background-color: rgb(0, 183, 255);
     color: white;
     padding: 4px 3px;
     margin: 4px 0;
 }
+
+#myModalConductor{
+    text-align: left;
+}
+
+#myModalConductor .input-group{
+    margin-bottom: 15px;
+}
+
+#myModalConductor p{
+    font-size: 12px;
+}
+
+#myModalConductor button{
+    text-align: left;
+}
+
+#myModalConductor .modal-body{
+    padding: 40px;
+}
+
 
 @media (min-width: 768px){
 

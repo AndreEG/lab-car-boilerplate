@@ -83,7 +83,7 @@
                             <p>O bien</p>
                             <div></div>
                         </div>
-                        <input type="button" value="Conviértete en Conductor" class="btn btn-default">
+                        <input type="button" value="Conviértete en Conductor" class="btn btn-default" data-toggle="modal" data-target="#myModalConductor">
                     </div>
                 </div>
             </div>
@@ -91,59 +91,57 @@
     </section>
 
     <div class="modal fade" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <button type="button" class="btn btn-default btn-black col-sm-10 col-sm-offset-1">Ya tienes una cuenta?</button>
-                    </div>
-                    <div class="modal-body col-sm-offset-1 col-sm-10">
-                        <p>O CREA UNA CUENTA NUEVA</p>
-                        <form>
-                            <div class="form-group col-sm-6">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
-                            </div>
-                            <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo electrónico: ejemplo@correo.com">
-                            </div>
-                            <div class="form-group">
-                                    <input type="phone" class="form-control" id="exampleInputEmail1" placeholder="Teléfono">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="btn btn-default btn-black col-sm-10 col-sm-offset-1">Ya tienes una cuenta?</button>
+                </div>
+                <div class="modal-body col-sm-offset-1 col-sm-10">
+                    <p>O CREA UNA CUENTA NUEVA</p>
+                    <form>
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo electrónico: ejemplo@correo.com">
+                        </div>
+                        <div class="form-group">
+                            <input type="phone" class="form-control" id="exampleInputEmail1" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ciudad">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="(opcional) Código de invitación">
+                        </div>
+                        <div class="form-group">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle col-sm-12" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Como te enteraste de nosotros?
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Por un amigo</a></li>
+                                    <li><a href="#">Redes sociales</a></li>
+                                    <li><a href="#">Otros medios de comunicación</a></li>
+                                </ul>
                                 </div>
-                            <div class="form-group">
-                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-                            </div>
-                            <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ciudad">
-                            </div>
-                            <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="(opcional) Código de invitación">
-                            </div>
-                            <div class="form-group">
-                                <div class="dropdown">
-                                    <button class="btn btn-default dropdown-toggle col-sm-12" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Como te enteraste de nosotros?
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Por un amigo</a></li>
-                                        <li><a href="#">Redes sociales</a></li>
-                                        <li><a href="#">Otros medios de comunicación</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" class="btn btn-default col-sm-12 enviar-btn">
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-default col-sm-12 enviar-btn">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
     <section class="new-app">
         <div class="container-fluid">
@@ -172,11 +170,90 @@
                 <div class="transparent col-xs-12 col-sm-4">
                     <h3>Conduce cuando quieras</h3>
                     <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-                    <input type="button" value="Conviértete en Conductor" class="btn btn-default btn-lg">
+                    <input type="button" value="Conviértete en Conductor" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModalConductor">
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="myModalConductor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body col-xs-12">
+                    <div class="input-group col-xs-12">
+                        <label for="dropdown">¡Tienes vehhículo de 4 puertas?</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle col-xs-12" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Si<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                  <li><a href="#">Si</a></li>
+                                  <li><a href="#">No</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="input-group col-xs-12">
+                        <label for="dropdown">Marca</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle col-xs-12" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Elige la marca del vehículo<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                  <li><a href="#">Toyota</a></li>
+                                  <li><a href="#">Nissan</a></li>
+                                  <li><a href="#">Hyundai</a></li>
+                                  <li><a href="#">Kia</a></li>
+                                  <li><a href="#">Otro</a></li>
+                            </ul>
+                        </div>
+                        <p>¿No ves tu vehículo en la lista? Envía un correo eléctronico a <a href="#">sociosmdv@uber.com</a></p>
+                    </div>
+                    <div class="input-group col-xs-12">
+                        <label for="dropdown">Modelo</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle col-xs-12" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Modelo 1<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Modelo 1</a></li>
+                                <li><a href="#">Modelo 2</a></li>
+                                <li><a href="#">Modelo 3</a></li>
+                                <li><a href="#">Modelo 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="input-group col-xs-12">
+                        <label for="dropdown">Año</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle col-xs-12" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                2017<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">2014</a></li>
+                                <li><a href="#">2015</a></li>
+                                <li><a href="#">2016</a></li>
+                                <li><a href="#">2017</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="input-group col-xs-12">
+                        <label for="dropdown">Número de la matrícula</label>
+                        <div class="dropdown">
+                            <input type="text" placeholder="Número de la matrícula" class="col-xs-12">
+                        </div>
+                        <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                    </div>
+                    <div class="input-group col-xs-12">
+                        <input type="submit" value="Enviar" class="btn btn-default col-xs-12 enviar-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="tarifas">
         <div class="container-fluid">
             <div class="tarifas-form col-sm-4 col-sm-offset-1">
