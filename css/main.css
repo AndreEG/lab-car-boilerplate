@@ -229,7 +229,7 @@ i{
     overflow: hidden;
 }
 
-.modal-body{
+#myModal .modal-body{
     border: 1px solid #ffb100;
     border-radius: 5px;
     text-align: center;
@@ -237,16 +237,39 @@ i{
     margin-bottom: 15px;
 }
 
-.modal-body .input-group{
+#myModal .modal-body .input-group{
     margin: 10px 0;
 }
 
-.modal-body button{
+#myModal .modal-body button{
     margin: 10px;
     background-color: #ffb100;
 }
 
+#myModalRegister{
+    text-align: center;
+}
 
+#myModalRegister .btn-black{
+    background-color: black;
+    color: white;
+}
+
+#myModalRegister .form-group{
+    padding: 4px 3px;
+    margin: 0;
+}
+
+#myModalRegister .dropdown-toggle{
+    background-color: gray;
+}
+
+#myModalRegister .enviar-btn{
+    background-color: rgb(0, 183, 255);
+    color: white;
+    padding: 4px 3px;
+    margin: 4px 0;
+}
 
 @media (min-width: 768px){
 

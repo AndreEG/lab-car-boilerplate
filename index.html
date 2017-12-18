@@ -39,8 +39,8 @@
     </header>
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <img src="assets/images/perfil.jpg" alt="perfil" class="img-circle col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4">
@@ -62,9 +62,9 @@
                         <p>Forgot Password <a href="#">Click Here</a></p>
                     </form>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+    </div>
 
     <section class="register">
         <div class="container-fluid">
@@ -77,7 +77,7 @@
                     <div class="none-xs">
                         <h3>Disfruta del viaje <br>Eres dueño de tu tiempo</h3>
                         <h5>Viaja con <img src="assets/images/logoBlanco.png" alt="logo blanco"></h5>
-                        <input type="button" value="REGÍSTRATE" class="btn btn-default">
+                        <input type="button" value="REGÍSTRATE" class="btn btn-default" data-toggle="modal" data-target="#myModalRegister">
                         <div class="separation">
                             <div></div>
                             <p>O bien</p>
@@ -89,6 +89,62 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="btn btn-default btn-black col-sm-10 col-sm-offset-1">Ya tienes una cuenta?</button>
+                    </div>
+                    <div class="modal-body col-sm-offset-1 col-sm-10">
+                        <p>O CREA UNA CUENTA NUEVA</p>
+                        <form>
+                            <div class="form-group col-sm-6">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
+                            </div>
+                            <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo electrónico: ejemplo@correo.com">
+                            </div>
+                            <div class="form-group">
+                                    <input type="phone" class="form-control" id="exampleInputEmail1" placeholder="Teléfono">
+                                </div>
+                            <div class="form-group">
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ciudad">
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="(opcional) Código de invitación">
+                            </div>
+                            <div class="form-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle col-sm-12" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Como te enteraste de nosotros?
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Por un amigo</a></li>
+                                        <li><a href="#">Redes sociales</a></li>
+                                        <li><a href="#">Otros medios de comunicación</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-default col-sm-12 enviar-btn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <section class="new-app">
         <div class="container-fluid">
             <div class="app">
