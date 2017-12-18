@@ -153,6 +153,43 @@
     border: none;
 }
 
+/*estilos a section trarifa*/
+
+.tarifas{
+    background-color: #ffb100;
+    color: white;
+}
+
+.tarifas-form{
+    margin: 70px 10px;
+}
+
+.input-flex{
+    display: flex;
+    align-items: center;
+}
+
+.input-flex input{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.input-flex img{
+    margin: 10px;
+}
+
+.form-group:last-child{
+    text-align: center;
+}
+
+.map{
+    outline: 1px solid white;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
 @media (min-width: 768px){
 
     .box-yellow{
