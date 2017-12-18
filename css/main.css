@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*modificando estilos a header*/
@@ -16,20 +17,28 @@
     margin: 16px 30px 16px 16px;
 }
 
-.navbar-nav{
-    /*float: right;*/
-    /*margin: 10px; usar con media query*/
-}
-
-/*estilos a section 1*/
+/*estilos a section 1 primera seccion amarilla*/
 .box-yellow{
     background-color: #ffb100;
+    color: white;
+    height: 45%;
+    padding: 0;
+}
+
+.box-yellow h1{
+    margin: 30px;
+}
+
+.box-yellow img{
+    height: 20px;
 }
 
 /*section 1 debe iniciar despues del nav*/
-
-.img-fondo{
-    height: 520px;
+.img-city{ /*el div que contiene lka imagen de fondo*/
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 540px;
     background-image: url(../assets/images/taxi.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -40,3 +49,157 @@
     padding: 0;
 }
 
+.box-yellow input{/*estilos al boton de descargta el app*/
+    color: black;
+    border: none;
+    margin-left: 30px;
+}
+
+.box-yellow .none-xs h3{ /*estilos al h3*/
+    margin: 25px;
+    font-size: 22px;
+}
+
+.box-yellow .none-xs h5{/*estilos al h5*/
+    margin-left: 25px;
+}
+
+.box-yellow .none-xs img{
+    height: 14px;
+}
+
+.box-yellow .none-xs input{
+    margin: 10px 25px;
+}
+
+.separation{
+    text-align: center;
+    margin: 0 25px 15px 25px;
+}
+
+.separation div{
+    width: 28%;
+    height: 1px;
+    display: inline-block;
+    background-color: white;
+}
+
+.separation p{
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 30px;
+}
+
+/*estilos para seccion app*/
+/*cuando es mobile*/
+.new-app{
+    background-color: #ffb100;
+    color: white;
+    text-align: center;
+}
+
+.borde-app{
+    outline: 1px solid white;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.borde-app h3{
+    padding-top: 30px;
+}
+
+.borde-app img{
+    margin-bottom: 20px;
+}
+
+.none-sm p{
+    text-align: left;
+    padding-top: 20px;
+}
+
+.app .none-sm{
+    padding: 0;
+}
+
+/*definimos una clase para ocultar algunos contenidos que no se vizualizan en mobile*/
+.none-xs{
+    display: none;
+}
+
+/*section drive*/
+.img-drive{
+    align-items: center;
+    height: 400px;
+    background-image: url(../assets/images/conduce.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.drive .container-fluid{
+    padding: 0;
+}
+
+.transparent{
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    color: white;  
+    padding: 80px 45px;  
+}
+
+.transparent input{
+    background-color: #ffb100;
+    color: white;
+    border: none;
+}
+
+@media (min-width: 768px){
+
+    .box-yellow{
+        height: 55%;
+    }
+    
+    .navbar-nav{
+    float: right;
+    margin: 10px;
+    }
+
+    .none-xs{
+        display: block;
+    }
+
+    .none-sm{
+        display: none;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    .new-app .container-fluid{
+        padding: 0;
+    }
+
+        /*secrion app desktop*/
+    .app .none-xs{
+        border: 1px solid white;
+        margin: 20px 0;
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+
+    .app .none-xs img{
+        padding: 30px 15px;
+    }
+
+    .transparent{
+        float: right;
+        padding: 80px 20px;
+    }
+
+    .transparent input{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
